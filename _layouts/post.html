@@ -8,8 +8,10 @@
         {% include nav.html %}
         {% include hero.html %}
         <br>
-        <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
-        <div class="container">{{ content }}</div>
+        <div class="container">
+            <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+            {{ content }}
+        </div>
         <br>
         {% include footer.html %}
         {% include foot.html %}

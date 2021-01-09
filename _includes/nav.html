@@ -1,0 +1,26 @@
+<nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="{{ site.url }}">
+        <strong>Hunter Data Analytics for Change</strong>
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="hdac-nav">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        </a>
+    </div>
+    <div id="hdac-nav" class="navbar-menu">
+        <div class="navbar-start">
+            {% for page in site.pages %}
+            {% if page.navbar == true %}
+            <a class="navbar-item" href="{{ page.url }}">
+            {{ page.title }}
+            </a>
+            {% endif %}
+            {% endfor %}
+        </div>
+        <div class="navbar-end">
+            <a class="navbar-item" href="https://github.com/{{ github_username }}">GitHub</a>
+        </div>
+    </div>
+</nav>

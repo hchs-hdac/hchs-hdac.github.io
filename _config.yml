@@ -1,0 +1,12 @@
+title: Hunter Data Analytics for Change
+email: hchs.hdac@gmail.com
+description: >-
+  Hunter Data Analytics for Change aims to teach Hunter students techniques 
+  for data analytics and help students build a strong coding skill set to 
+  pursue their own independent projects in data science.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://datascienceforchange.com" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: hchs-hdac
+
+# Build settings
+markdown: kramdown
